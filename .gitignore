@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 flame_of_ice.db
 .DS_Store
+DEV.md
