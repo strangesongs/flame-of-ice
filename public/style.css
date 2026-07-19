@@ -3,45 +3,57 @@
 }
 
 body {
-  margin: 0;
-  padding: 2rem 1.5rem 4rem;
-  font-family: system-ui, -apple-system, sans-serif;
-  font-size: 1rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
   line-height: 1.5;
   color: #111;
   background: #fff;
-  max-width: 52rem;
+  max-width: 40rem;
+  text-align: center;
 }
 
 header {
   margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 1rem;
+}
+
+.band-photo {
+  display: block;
+  width: min(100%, 22rem);
+  height: auto;
+  margin: 0 auto 1.5rem;
 }
 
 h1 {
-  font-size: 1.25rem;
+  font-size: clamp(2.25rem, 8vw, 3.25rem);
   font-weight: normal;
-  margin: 0 0 0.25rem;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.5rem;
 }
 
 .tagline {
   margin: 0;
   color: #444;
+  font-size: 1.05rem;
 }
 
 #count {
-  margin: 0.35rem 0 0;
-  font-size: 0.9rem;
+  margin: 0.75rem 0 0;
+  font-size: 0.95rem;
   color: #555;
 }
 
 #decades {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.75rem 1rem;
-  margin-top: 1rem;
-  font-size: 0.9rem;
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
 }
 
 #decades a {
@@ -50,6 +62,10 @@ h1 {
 
 #decades a:visited {
   color: #444;
+}
+
+main {
+  text-align: left;
 }
 
 .decade-marker {
@@ -67,7 +83,7 @@ h1 {
   z-index: 1;
   margin: 0 0 0.75rem;
   padding: 0.5rem 0;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: normal;
   color: #111;
   background: #fff;
@@ -94,13 +110,13 @@ h1 {
 
 .show-place {
   margin-top: 0.15rem;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #555;
 }
 
 .show-notes {
   margin-top: 0.35rem;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #555;
 }
 
@@ -108,7 +124,7 @@ h1 {
   margin: 0.5rem 0 0;
   padding: 0;
   list-style: none;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .show-recordings li {
@@ -131,7 +147,7 @@ footer {
   margin-top: 3rem;
   padding-top: 1rem;
   border-top: 1px solid #ccc;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 footer a {
