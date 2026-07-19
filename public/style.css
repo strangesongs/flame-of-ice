@@ -10,6 +10,10 @@ body {
 
 body {
   padding-bottom: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #000000;
   text-align: center;
 }
 
@@ -17,56 +21,56 @@ header {
   margin-bottom: 2rem;
 }
 
-.hero {
-  position: relative;
-  width: 100%;
+.header-text,
+.header-meta,
+.content {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.header-text {
+  padding-top: 1.5rem;
+}
+
+h1 {
+  margin: 0 0 0.35rem;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.tagline {
+  margin: 0 0 1.25rem;
 }
 
 .band-photo {
   display: block;
-  width: 100%;
+  width: 70%;
+  max-width: 56rem;
   height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 8%;
-  margin: 0;
-  padding: 0 1rem;
-  font-size: clamp(2.5rem, 12vw, 5rem);
-  font-weight: bold;
-  line-height: 1;
-  color: #ffffff;
-  text-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
-}
-
-.header-meta,
-.content {
-  max-width: 40rem;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 .header-meta {
   margin-top: 1rem;
 }
 
-.tagline {
+#count {
   margin: 0;
 }
 
-#count {
-  margin: 0.5rem 0 0;
-}
-
 #decades {
-  margin-top: 1rem;
+  margin-top: 0.75rem;
 }
 
 #decades a {
   margin: 0 0.5rem;
+  color: #0000ee;
+}
+
+#decades a:visited {
+  color: #551a8b;
 }
 
 main {
@@ -83,14 +87,10 @@ main {
 
 .year-heading {
   margin: 0 0 0.5rem;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: bold;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #cccccc;
   background: #ffffff;
-}
-
-.year-shows {
-  margin-left: 0;
 }
 
 .show {
@@ -100,6 +100,7 @@ main {
 .show-place,
 .show-notes {
   margin-top: 0.25rem;
+  color: #333333;
 }
 
 .show-recordings {
@@ -107,24 +108,42 @@ main {
   padding-left: 1.25rem;
 }
 
+.show-recordings a {
+  color: #0000ee;
+}
+
+.show-recordings a:visited {
+  color: #551a8b;
+}
+
 #error {
-  color: #800;
+  color: #800000;
 }
 
 footer {
   margin-top: 2rem;
   padding-top: 1rem;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
+}
+
+footer a {
+  color: #0000ee;
+}
+
+footer a:visited {
+  color: #551a8b;
 }
 
 .back-to-top {
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #ccc;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid #cccccc;
   background: #ffffff;
-  color: #111;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   text-decoration: none;
 }
 
