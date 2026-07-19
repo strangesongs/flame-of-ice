@@ -8,25 +8,31 @@
 </head>
 <body>
   <header>
-    <img
-      class="band-photo"
-      src="images/band.jpg"
-      alt="Les Rallizes Dénudés performing live"
-      width="1920"
-      height="1080"
-    >
-    <h1>Flame of Ice</h1>
-    <p class="tagline">A Les Rallizes Dénudés show archive</p>
-    <p id="count"></p>
-    <nav id="decades" aria-label="Jump to decade"></nav>
+    <div class="hero">
+      <img
+        class="band-photo"
+        src="images/band.jpg"
+        alt="Les Rallizes Dénudés performing live"
+        width="1920"
+        height="1080"
+      >
+      <h1>Flame of Ice</h1>
+    </div>
+    <div class="header-meta">
+      <p class="tagline">a Les Rallizes Dénudés show archive</p>
+      <p id="count"></p>
+      <nav id="decades" aria-label="Jump to decade"></nav>
+    </div>
   </header>
 
+  <div class="content">
   <main id="shows"></main>
   <p id="error" hidden></p>
 
   <footer>
     <a href="mailto:jcrtll@protonmail.com">Email admin</a>
   </footer>
+  </div>
 
   <a href="#" id="back-to-top" class="back-to-top" hidden>Back to top</a>
 

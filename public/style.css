@@ -2,31 +2,55 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  margin: 0 auto;
-  padding: 2rem 1rem 4rem;
-  max-width: 40rem;
+  margin: 0;
+  background: #ffffff;
+}
+
+body {
+  padding-bottom: 4rem;
   text-align: center;
 }
 
 header {
   margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
 }
 
 .band-photo {
   display: block;
   width: 100%;
-  max-width: 28rem;
   height: auto;
-  margin: 0 auto 1rem;
 }
 
-h1 {
-  font-size: 2rem;
+.hero h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 8%;
+  margin: 0;
+  padding: 0 1rem;
+  font-size: clamp(2.5rem, 12vw, 5rem);
   font-weight: bold;
-  margin: 0 0 0.5rem;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+.header-meta,
+.content {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header-meta {
+  margin-top: 1rem;
 }
 
 .tagline {
@@ -62,6 +86,7 @@ main {
   font-size: 1rem;
   font-weight: bold;
   border-bottom: 1px solid #ddd;
+  background: #ffffff;
 }
 
 .year-shows {
@@ -98,12 +123,12 @@ footer {
   bottom: 1rem;
   padding: 0.5rem 0.75rem;
   border: 1px solid #ccc;
-  background: #fff;
+  background: #ffffff;
   color: #111;
   text-decoration: none;
 }
 
 .back-to-top:focus,
 .back-to-top:hover {
-  background: #f5f5f5;
+  background: #ffffff;
 }
