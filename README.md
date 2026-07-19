@@ -1,6 +1,6 @@
 # Flame of Ice
 
-A scrappy archive of known live performances by **Les Rallizes Dénudés** (裸のラリーズ).
+An archive of known live performances by **Les Rallizes Dénudés** (裸のラリーズ).
 
 SQLite database + minimal Flask API + plain HTML frontend.
 
