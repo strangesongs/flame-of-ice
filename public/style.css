@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1.5rem 4rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #111;
+  background: #fff;
+  max-width: 52rem;
+}
+
+header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin: 0 0 0.25rem;
+}
+
+.tagline {
+  margin: 0;
+  color: #444;
+}
+
+#count {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#decades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+#decades a {
+  color: #111;
+}
+
+#decades a:visited {
+  color: #444;
+}
+
+.decade-marker {
+  height: 0;
+  scroll-margin-top: 3rem;
+}
+
+.year-section {
+  margin-bottom: 2rem;
+}
+
+.year-heading {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin: 0 0 0.75rem;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #111;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.year-shows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.show {
+  padding-bottom: 0.25rem;
+}
+
+.show-headline {
+  font-variant-numeric: tabular-nums;
+}
+
+.show-date {
+  font-variant-numeric: tabular-nums;
+}
+
+.show-place {
+  margin-top: 0.15rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.show-notes {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.show-recordings {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.show-recordings li {
+  margin: 0.2rem 0;
+}
+
+.show-recordings a {
+  color: #111;
+}
+
+.show-recordings a:visited {
+  color: #444;
+}
+
+#error {
+  color: #800;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #111;
+}
+
+footer a:visited {
+  color: #444;
+}
+
+@media (min-width: 40rem) {
+  body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
