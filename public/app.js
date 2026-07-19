@@ -131,10 +131,11 @@ async function loadShows() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
 
-    const recorded = data.shows.filter((s) => s.recordings && s.recordings.length > 0).length;
-    countEl.textContent = `${data.count} shows · ${recorded} recorded`;
-    renderDecadeNav(data.shows.map((s) => s.year));
-    renderShowsGrouped(data.shows);
+    const shows = data.shows || [];
+    const recorded = shows.filter((s) => s.recordings && s.recordings.length > 0).length;
+    countEl.textContent = `${shows.length} shows · ${recorded} recorded`;
+    renderDecadeNav(shows.map((s) => s.year));
+    renderShowsGrouped(shows);
   } catch (err) {
     errorEl.hidden = false;
     errorEl.textContent = `Could not load shows: ${err.message}`;
@@ -142,3 +143,14 @@ async function loadShows() {
 }
 
 loadShows();
+
+const backToTop = document.getElementById("back-to-top");
+
+backToTop.addEventListener("click", (event) => {
+  event.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+window.addEventListener("scroll", () => {
+  backToTop.hidden = window.scrollY < 400;
+});
