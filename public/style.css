@@ -124,6 +124,21 @@ footer {
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid #cccccc;
+  text-align: left;
+}
+
+.sources-heading {
+  margin: 0 0 0.35rem;
+  font-weight: bold;
+}
+
+.sources {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.sources li {
+  margin: 0.2rem 0;
 }
 
 footer a {
