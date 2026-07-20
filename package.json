@@ -1,0 +1,25 @@
+{
+  "name": "flame-of-ice",
+  "version": "1.0.0",
+  "description": "An archive of known live performances by **Les Rallizes Dénudés** (裸のラリーズ).",
+  "main": "index.js",
+  "scripts": {
+    "copy:css": "cp node_modules/skeleton-css/css/normalize.css node_modules/skeleton-css/css/skeleton.css public/css/",
+    "preview": "npm run copy:css && python3 -m http.server 8765 --directory public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strangesongs/flame-of-ice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/strangesongs/flame-of-ice/issues"
+  },
+  "homepage": "https://github.com/strangesongs/flame-of-ice#readme",
+  "dependencies": {
+    "skeleton-css": "^2.0.4"
+  }
+}

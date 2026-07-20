@@ -4,3 +4,4 @@ __pycache__/
 flame_of_ice.db
 .DS_Store
 DEV.md
+node_modules/

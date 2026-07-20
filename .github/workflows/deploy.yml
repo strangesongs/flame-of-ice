@@ -22,12 +22,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Build site
         run: |
+          npm ci
+          npm run copy:css
           python scripts/generate_data.py
           mkdir _site
           cp -r public/* _site/

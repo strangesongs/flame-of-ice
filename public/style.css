@@ -1,168 +1,116 @@
-* {
-  box-sizing: border-box;
-}
-
-html,
 body {
-  margin: 0;
-  background: #ffffff;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
 }
 
-body {
-  padding-bottom: 4rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #000000;
-  text-align: center;
-}
-
-header {
-  margin-bottom: 2rem;
-}
-
-.header-text,
-.header-meta,
-.content {
-  max-width: 40rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem;
+.site-header {
+  margin-bottom: 3rem;
 }
 
 .header-text {
-  padding-top: 1.5rem;
+  padding-top: 2rem;
+  text-align: center;
 }
 
-h1 {
-  margin: 0 0 0.35rem;
-  font-size: 28px;
-  font-weight: bold;
+.header-text h1 {
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
 }
 
 .tagline {
-  margin: 0 0 1.25rem;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.hero-photo {
+  width: 85%;
+  max-width: 52rem;
+  margin: 2rem auto 0;
 }
 
 .band-photo {
   display: block;
-  width: 70%;
-  max-width: 56rem;
+  width: 100%;
   height: auto;
-  margin: 0 auto;
 }
 
 .header-meta {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
 }
 
 #count {
-  margin: 0;
-}
-
-#decades {
-  margin-top: 0.75rem;
+  margin-bottom: 0;
 }
 
 #decades a {
-  margin: 0 0.5rem;
-  color: #0000ee;
-}
-
-#decades a:visited {
-  color: #551a8b;
-}
-
-main {
-  text-align: left;
-}
-
-.decade-marker {
-  height: 0;
+  margin: 0 0.35rem;
 }
 
 .year-section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .year-heading {
-  margin: 0 0 0.5rem;
-  font-size: 14px;
-  font-weight: bold;
-  border-bottom: 1px solid #cccccc;
-  background: #ffffff;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .show {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .show-place,
 .show-notes {
-  margin-top: 0.25rem;
-  color: #333333;
+  color: #666;
+  margin-bottom: 0;
 }
 
 .show-recordings {
-  margin: 0.5rem 0 0;
-  padding-left: 1.25rem;
+  list-style: none;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
-.show-recordings a {
-  color: #0000ee;
+.show-recordings li {
+  margin-bottom: 0.25rem;
 }
 
-.show-recordings a:visited {
-  color: #551a8b;
+.site-footer {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e1e1e1;
 }
 
-#error {
-  color: #800000;
+.site-footer h6 {
+  margin-bottom: 0.75rem;
+  font-weight: 400;
 }
 
-footer {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid #cccccc;
-  text-align: left;
+.source-list p {
+  margin-bottom: 0.35rem;
 }
 
-.sources-heading {
-  margin: 0 0 0.35rem;
-  font-weight: bold;
-}
-
-.sources {
-  margin: 0 0 1rem;
-  padding-left: 1.25rem;
-}
-
-.sources li {
-  margin: 0.2rem 0;
-}
-
-footer a {
-  color: #0000ee;
-}
-
-footer a:visited {
-  color: #551a8b;
+.footer-contact {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 .back-to-top {
   position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  padding: 0.35rem 0.6rem;
-  border: 1px solid #cccccc;
-  background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  text-decoration: none;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  margin-bottom: 0;
+  z-index: 10;
+  font-weight: 400;
 }
 
-.back-to-top:focus,
-.back-to-top:hover {
-  background: #ffffff;
+#error {
+  color: #e74c3c;
 }

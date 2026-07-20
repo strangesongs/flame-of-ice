@@ -4,45 +4,68 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flame of Ice — Les Rallizes Dénudés Live Shows</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header-text">
-      <h1>Flame of Ice</h1>
-      <p class="tagline">a Les Rallizes Dénudés show archive</p>
+  <header class="site-header">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns header-text">
+          <h1>Flame of Ice</h1>
+          <p class="tagline">a Les Rallizes Dénudés show archive</p>
+        </div>
+      </div>
     </div>
-    <img
-      class="band-photo"
-      src="images/band.jpg"
-      alt="Les Rallizes Dénudés performing live"
-      width="1920"
-      height="1080"
-    >
-    <div class="header-meta">
-      <p id="count"></p>
-      <nav id="decades" aria-label="Jump to decade"></nav>
+
+    <figure class="hero-photo">
+      <img
+        class="band-photo"
+        src="images/band.jpg"
+        alt="Les Rallizes Dénudés performing live"
+      >
+    </figure>
+
+    <div class="container header-meta">
+      <div class="row">
+        <div class="twelve columns">
+          <p id="count"></p>
+          <nav id="decades" aria-label="Jump to decade"></nav>
+        </div>
+      </div>
     </div>
   </header>
 
-  <div class="content">
-  <main id="shows"></main>
-  <p id="error" hidden></p>
+  <main class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <div id="shows"></div>
+        <p id="error" hidden></p>
+      </div>
+    </div>
+  </main>
 
-  <footer>
-    <p class="sources-heading">Sources</p>
-    <ul class="sources">
-      <li><a href="https://www.setlist.fm/setlists/les-rallizes-denudes-3bd6ac04.html">setlist.fm</a> — show index</li>
-      <li><a href="https://www.lesrallizesdenudes-official.com/">Les Rallizes Dénudés official site</a></li>
-      <li><a href="https://lrd.bootleg.fm/">bootleg.fm</a> — bootleg archive</li>
-      <li><a href="https://www.discogs.com/artist/273357-Les-Rallizes-D%C3%A9nud%C3%A9s">Discogs</a> — releases</li>
-      <li><a href="https://www.albumoftheyear.org/user/oscarisverycool/list/429869/les-rallizes-dnuds-live-archive-1973-1993-uncompiled/">Live Archive (1973–1993)</a> — supplemental shows</li>
-    </ul>
-    <p><a href="mailto:jcrtll@protonmail.com">Email admin</a></p>
+  <footer class="container site-footer">
+    <div class="row">
+      <div class="twelve columns">
+        <h6>Sources</h6>
+        <div class="source-list">
+          <p><a href="https://www.setlist.fm/setlists/les-rallizes-denudes-3bd6ac04.html">setlist.fm</a> · show index</p>
+          <p><a href="https://www.lesrallizesdenudes-official.com/">Les Rallizes Dénudés official site</a></p>
+          <p><a href="https://lrd.bootleg.fm/">bootleg.fm</a> · bootleg archive</p>
+          <p><a href="https://www.discogs.com/artist/273357-Les-Rallizes-D%C3%A9nud%C3%A9s">Discogs</a> · releases</p>
+          <p><a href="https://www.albumoftheyear.org/user/oscarisverycool/list/429869/les-rallizes-dnuds-live-archive-1973-1993-uncompiled/">Live Archive (1973–1993)</a> · supplemental shows</p>
+        </div>
+        <p class="footer-contact"><a href="mailto:jcrtll@protonmail.com">Email admin</a></p>
+      </div>
+    </div>
   </footer>
-  </div>
 
-  <a href="#" id="back-to-top" class="back-to-top" hidden>Back to top</a>
+  <a href="#" id="back-to-top" class="button back-to-top" hidden>Back to top</a>
 
   <script src="app.js"></script>
 </body>
